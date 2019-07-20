@@ -242,7 +242,7 @@ footer i{
         display: flex;
     }
 }
-/* #cretidos{
+#cretidos{
     color: #fff;
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -253,18 +253,23 @@ footer{
     background: #2E2E2E;
     margin-right: -8px;
     margin-left: -8px;
-    margin-bottom: -8px;
+    margin-bottom: -10px;
     height: 250px;
 }
 footer #insta, #facebook{
     color: #fff;
     margin-right: 10px;
-    margin-top: 30px;
+    margin-top: 00px;
     font-size: 30pt;
     border-radius: 8px;
     padding: 15px;
     cursor: pointer;
     transition: 0.5s;
+}
+#insta, #facebook{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 #insta:hover{
     background:#74b9ff;
@@ -272,11 +277,21 @@ footer #insta, #facebook{
 #facebook:hover{
     background: #3b5998;
 }
+.containerFooter{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 footer p{
     color: #fff;
     text-align: center;
     cursor: default;
     overflow: hidden;
+}
+.btnMais{
+    color: #fff;
+    text-decoration: none;
 }
 .cret{
     display: block;
@@ -296,4 +311,4 @@ footer p{
     background: #fff;
     color: #333;
     border-radius: 8px;
-} */
+}

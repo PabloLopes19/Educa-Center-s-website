@@ -219,6 +219,7 @@ section p{
     transition: 0.5s;
     margin-right: auto;
     margin-left: auto;
+    font-size: 15pt;
     cursor: default;
 }
 div.container button{
@@ -370,6 +371,7 @@ div.container button:hover{
         width: 200px;
     }
 }
+/* Configuração do footer */
 #cretidos{
     color: #fff;
     font-family: 'Arial', sans-serif;
