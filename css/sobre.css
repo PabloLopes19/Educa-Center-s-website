@@ -1,0 +1,200 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    background: linear-gradient(to bottom right, #FF7043, #FBC02D);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    display: flex;  
+}
+#menuMobile{
+    display: none;
+    justify-content: center;
+}
+#menuMobile button{
+    margin: 15px;
+    color: #333;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menuMobile h1{
+    font-size: 6px;
+}
+.titleEduca{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-name: titleECAn;
+    animation-duration: 2s;
+    margin-top: 0%;
+}
+@keyframes titleECAn{
+    from{
+        opacity: 0;
+        margin-top: 80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 00%;
+    }  
+} 
+.logpDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+}
+@keyframes logoAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }  
+}
+img.logoEC{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.titleEC{
+    text-align: center;
+    margin-top: 0%;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 75pt; 
+}
+.menu{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.menu button{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial', sans-serif;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+    outline: none;
+}
+.menu button:hover{
+    color: #ccc;
+}
+.imgLogo{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 8px;
+    margin-left: -20px;
+    width: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    float: none;
+}
+.imgLogo:hover{
+    border-left: 40px solid #fff;
+}
+.pageTitle{
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    margin-top: 100px;
+    animation-name: sobreH1Animation;
+    animation-duration: 3s;
+}
+@keyframes sobreH1Animation{
+    from{
+        opacity: 0;
+        margin-top: 200px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content1 h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    animation-name: caixas;
+    animation-duration: 3s;
+}
+.formPessoa{
+    background: #fff;
+    width: 400px;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    animation-name: caixas;
+    animation-duration: 3s;
+}
+.formPessoa h1{
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 25pt;
+    margin: 10px;
+}
+.formPessoa p{
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #000;
+}
+@keyframes caixas{
+    from{
+        opacity: 0;
+    }
+    to{
+
+    }
+}
+@media only screen and (max-width: 750px) {
+    .menu{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    #menuMobile{
+        display: flex;
+    }
+    .formPessoa{
+        width: 150px;
+    }
+    .formPessoa h1{
+        font-size: 20pt;
+    }
+    .pageTitle h1{
+        font-size: 40pt;
+    }
+    .content{
+        margin-top: -10px;
+    }
+    .content1 h1{
+        font-size: 20pt;
+    }
+}

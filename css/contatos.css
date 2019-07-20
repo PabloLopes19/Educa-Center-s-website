@@ -1,0 +1,156 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    background: linear-gradient(to bottom right, #FF7043, #FBC02D);
+    background-attachment: fixed;
+    flex-direction: column;
+}
+header{
+    display: flex;  
+}
+#menuMobile{
+    display: none;
+    justify-content: center;
+}
+#menuMobile button{
+    margin: 15px;
+    color: #333;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menuMobile h1{
+    font-size: 6px;
+}
+.menu{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.menu button{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial', sans-serif;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+    outline: none;
+}
+.menu button:hover{
+    color: #ccc;
+}
+.imgLogo{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 8px;
+    margin-left: -20px;
+    width: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    float: none;
+}
+.imgLogo:hover{
+    border-left: 40px solid #fff;
+}
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+    animation-name: animar;
+    animation-duration: 3s;
+}
+.conjuntos{
+    border: none;
+    padding: 15px;
+}
+h2 {
+    font-size: 20pt;
+    color: #fff;
+}
+p {
+    font-size: 25pt;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 8px;
+    color: #333;
+}
+#conteudo h1 {
+    font-size: 30pt;
+    color: #fff;
+    font-size: 40pt;
+}
+.conteudo i{
+    font-size: 20pt;
+    color: #fff;
+
+}
+@keyframes animar{
+    from{
+        margin-top: 25%;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes txtAnim{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .container {
+        width: 600px;
+    }
+    .conjuntos p{
+        font-size: 15pt;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #menuMobile{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu button{
+        color: #333;
+    }
+    .logo{
+        opacity: 0;
+    }
+    .conjuntos p{
+        font-size: 7pt;
+    }
+    .conteudo{
+        margin-top: -50px;
+    }
+}

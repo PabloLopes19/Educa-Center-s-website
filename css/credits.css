@@ -1,0 +1,244 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    background: linear-gradient(to bottom right, #FF7043, #FBC02D);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+header{
+    display: flex;  
+}
+#menuMobile{
+    display: none;
+    justify-content: center;
+}
+#menuMobile button{
+    margin: 15px;
+    color: #333;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menuMobile h1{
+    font-size: 6px;
+}
+.titleEduca{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-name: titleECAn;
+    animation-duration: 2s;
+    margin-top: 0%;
+}
+@keyframes titleECAn{
+    from{
+        opacity: 0;
+        margin-top: 80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 00%;
+    }  
+} 
+.logpDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+}
+@keyframes logoAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }  
+}
+img.logoEC{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.titleEC{
+    text-align: center;
+    margin-top: 0%;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 75pt; 
+}
+.menu{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.menu button{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial', sans-serif;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+    outline: none;
+}
+.menu button:hover{
+    color: #ccc;
+}
+.imgLogo{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 8px;
+    margin-left: -20px;
+    width: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    float: none;
+}
+.imgLogo:hover{
+    border-left: 40px solid #fff;
+}
+.container{
+    margin-top: 130px;
+}
+.caixas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-name: caixaAnim;
+    animation-duration: 3s;
+}
+@keyframes caixaAnim{
+    from{
+        opacity: 0;
+        margin-top: 200px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes h1Anima{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.container h1{
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 35pt;
+    text-align: center;
+    animation-name: h1Anima;
+    animation-duration: 3s;
+}
+.forms{
+    background: #fff;
+    margin: 20px;   
+    margin-right: 0;
+    padding: 20px;
+    width: 400px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 30px;
+}
+.forms h1{
+    color: #333;
+    text-align: center;
+    cursor: default;
+}
+.forms p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    cursor: default;
+}
+.forms button{
+    color: white;
+    background: #42A5F5;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;   
+    margin: 10px;
+}
+.forms i{
+    font-size: 20pt;
+}
+.forms p{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.names p{
+    font-size: 10pt;
+
+}
+@media only screen and (max-width: 1150px){
+    
+}
+@media only screen and (max-width: 750px){
+    .container h1{
+        font-size: 20pt;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #menuMobile{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menu button{
+        color: #333;
+    }
+    .logo{
+        opacity: 0;
+    }    
+    .caixas{
+        flex-direction: column;
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .forms{
+        width: 250px;
+        justify-content: center;
+    }
+    .container{
+        margin-top: 30px;
+    }
+}

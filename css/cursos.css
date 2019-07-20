@@ -1,0 +1,299 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    background: linear-gradient(to bottom right, #FF7043, #FBC02D);
+    background-attachment: fixed;
+    flex-direction: column;
+}
+header{
+    display: flex;  
+}
+#menuMobile{
+    display: none;
+    justify-content: center;
+}
+#menuMobile button{
+    margin: 15px;
+    color: #333;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menuMobile h1{
+    font-size: 6px;
+}
+.menu{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.menu button{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial', sans-serif;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+    outline: none;
+}
+.menu button:hover{
+    color: #ccc;
+}
+.imgLogo{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 8px;
+    margin-left: -20px;
+    width: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    float: none;
+}
+.imgLogo:hover{
+    border-left: 40px solid #fff;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    margin-top: 20%; 
+}
+.container div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 20%;
+    margin: 20px;
+    animation-name: divAnimar;
+    animation-duration: 1.5s;
+}
+.formCursos h1{
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 15pt;
+    cursor: default;
+}
+div.container button{
+    background: #42A5F5;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 15pt;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    outline: none;
+}
+div.container button:hover{
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #ddd;
+}
+@keyframes divAnimar{
+    from{
+        margin-top: 25%;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.titleContainer{
+    position: absolute;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    animation-name: txtAnim;
+    cursor: default;
+    animation-duration: 2s;
+    font-size: 30pt;
+}
+@keyframes txtAnim{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+footer{
+    background: #333;
+}
+footer h3{
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 12pt;
+    text-align: left;
+}
+footer i{
+    color: #fff;
+}
+@media only screen and (max-width: 1150px) {
+    .container {
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .container{
+        width: 200px;
+        margin-top: 100px;
+    }
+    .container h1{
+        font-size: 10pt;
+    }
+    .titleContainer {
+        font-size: 25pt;
+    }
+}
+@media only screen and (max-width: 750px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menu button{
+        color: #333;
+    }
+    .logo{
+        opacity: 0;
+    }
+    .logpDiv img{
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        margin-top: -10px;
+    }
+    .titleEC{
+        font-size: 35pt;
+    }
+    section h1{
+        font-size: 25pt;
+        text-align: center;
+    }
+    section p{
+        text-align: justify;
+        margin: 20px;
+        font-size: 12pt;
+    }
+    .formCursos h1{
+        font-size: 10pt;
+    }
+    div.container button{
+        background: #42A5F5;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Arial', sans-serif;
+        border: none;
+        border-radius: 12px;
+        padding: 10px;
+        font-size: 10pt;
+        cursor: pointer;
+        margin-right: 15px;
+        margin-left: 15px;
+        transition: 0.3s;
+        outline: none;
+    }
+    #saibaMais{
+        margin-top: -20px; 
+        background: transparent;
+    }
+    #saibaMais button{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #menuMobile{
+        display: flex;
+    }
+}
+/* #cretidos{
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    display: none;
+    position: absolute;
+}
+footer{
+    background: #2E2E2E;
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    height: 250px;
+}
+footer #insta, #facebook{
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 30px;
+    font-size: 30pt;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#insta:hover{
+    background:#74b9ff;
+}
+#facebook:hover{
+    background: #3b5998;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    cursor: default;
+    overflow: hidden;
+}
+.cret{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    font-size: 20px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cret:hover{
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+} */

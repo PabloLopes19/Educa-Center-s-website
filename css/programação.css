@@ -1,0 +1,241 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    background: linear-gradient(to bottom right, #FF7043, #FBC02D);
+    background-attachment: fixed;
+    flex-direction: column;
+}
+header{
+    display: flex;  
+}
+#menuMobile{
+    display: none;
+    justify-content: center;
+}
+#menuMobile button{
+    margin: 15px;
+    color: #333;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menuMobile h1{
+    font-size: 6px;
+}
+.menu{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.interesse, .fodao{
+    background: #fff;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+.menu button{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial', sans-serif;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+    outline: none;
+}
+.menu button:hover{
+    color: #ccc;
+}
+.imgLogo{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 8px;
+    margin-left: -20px;
+    width: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    float: none;
+}
+.imgLogo:hover{
+    border-left: 40px solid #fff;
+}
+/* Conteúdo do site */
+.titleProgramacao{
+    font-family: 'Arial', sans-serif;
+    font-size: 80pt;
+    margin-top: 150px;
+    text-align: center;
+    cursor: default;
+    color: white;
+    animation-name: progAnima;
+    animation-duration: 3s;
+}
+@keyframes progAnima{
+    from{
+        opacity: 0;
+        margin-top: 200px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.container h1{
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    font-size: 30pt;
+    cursor: default;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 3px solid #000;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    width: 600px;
+}
+.container p{
+    color: #aaa;
+    font-family: 'Arial', sans-serif;
+    font-size: 12pt;
+    text-align: center; 
+    width: 600px;
+    cursor: default;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+}
+.container img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+.form{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.form h1{
+    color: #333;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 30pt;
+    border-bottom: none;
+    cursor: default;
+    width: 100%;
+}
+.form button{
+    background: #42A5F5;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 120px;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    outline: none;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.2s;
+}
+.form button:hover{
+    width: 130px;
+}
+@media only screen and (max-width: 950px) {
+    .titleProgramacao{
+        font-size: 30pt;
+    }
+}
+@media only screen and (max-width: 850px) {
+    img{
+        width: 500px;
+    }
+    .fodao, .interesse{
+        width: 500px;
+    }
+    .container h1{
+        font-size: 20pt;
+        width: 300px;
+    }
+    .container p{
+        font-size: 10pt;
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .container h1{
+        font-size: 33pt;
+    }
+    .container p{
+        font-size: 12pt;
+    }
+    .form{
+        width: 200px;
+        height: 150px;
+    }
+    .form h1{
+        font-size: 20pt;
+    }
+}
+@media only screen and (max-width: 650px) {
+    header{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    #menuMobile{
+        display: flex;
+    }
+    .titleProgramacao{
+        font-size: 20pt;
+        margin-top: 40px;
+    }
+    .fodao, .interesse{
+        width: 300px;
+    }
+    .container h1{
+        font-size: 20pt;
+        text-align: center;
+        width: 200px;
+    }
+    .container p{
+        font-size: 8pt;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto; 
+    }
+    img{
+        width: 300px;
+    }
+    .form{
+        width: 200px;
+        height: 100px;
+    }
+    .form h1{
+        font-size: 13pt;
+    }
+    .form button{
+        font-size: 8pt;
+        width: 100px;
+    }
+}
