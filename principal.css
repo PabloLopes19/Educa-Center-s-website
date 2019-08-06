@@ -8,7 +8,6 @@ body{
     background: #ecf0f1;
 }
 header{
-    background: #FF7043;
     display: flex;  
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -16,6 +15,7 @@ header{
     margin-right: -8px;
     margin-left: -8px;
     height: 90px;
+    background: linear-gradient(to bottom right, #FF7043, #FBC02D);
 }
 .menu{
     margin-top: 15px;
@@ -103,6 +103,26 @@ img.logoEC{
 .menu button:hover{
     color: #ccc;
 }
+#darkModeBtn{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#darkModeBtn:hover{
+    color: #eee;
+}
+#darkModeBtn:active{
+    color: #ccc;
+}
 .imgLogo{
     position: absolute;
     display: block;
@@ -152,8 +172,8 @@ section div{
 }
 section h1{
     font-family: sans-serif;
-    color: #111;
-    border-bottom: 3px solid #333;
+    color: #000;
+    border-bottom: 3px solid #000;
     padding-bottom: 20px;
     width: 450px;
     margin-right: auto;
@@ -166,7 +186,7 @@ section h1{
     cursor: default;
 }
 section p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -186,6 +206,7 @@ section p{
     flex-wrap: wrap;
     margin-top: 0%;
     border-radius: 8px;
+    border: 3px linear-gradient(to bottom left, #f47620, #f4e102); 
 }
 .container div{
     display: flex;
@@ -194,21 +215,18 @@ section p{
     width: 350px;
     padding: 20px;
     background: #fff;
+    border: none;
     border-radius: 10px;
     justify-content: center;
     margin-top: 20%;
     margin: 20px;
     animation-name: divAnimar;
     animation-duration: 1.5s;
+    transition: 0.3s;
 }
-.formCursos {
-    border: solid rgba(189, 195, 199,.4) 2px;
-    transition: 0.2s;
-}
-.formCursos:hover{
-    border: solid #ecf0f1 2px;
+.container .formCursos:hover{
     box-shadow: 0 0 20px -5px;
-
+    background: #fff;
 }
 .nossosCursos{
     color: #111;
@@ -217,8 +235,11 @@ section p{
     font-size: 25pt;
     cursor: default;
 }
+.formCursos{
+    border: 3px solid #f47620;
+}
 .formCursos h1{
-    color: #111;
+    color: #000;
     font-family: 'Arial', sans-serif;
     text-align: center;
     transition: 0.5s;
@@ -229,9 +250,10 @@ section p{
 }
 div.container button{
     background: #42A5F5;
-    color: #fff;
+    color: white;
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
+    border: none;
     border-radius: 12px;
     padding: 15px;
     font-size: 15pt;
@@ -245,12 +267,6 @@ div.container button:hover{
     margin-right: 0px;
     margin-left: 0px;
     background: #01579B;
-}
-.btnform{
-    border: none;
-}
-.saibaMais button {
-    border: solid rgba(189, 195, 199,.4) 2px;
 }
 @keyframes divAnimar{
     from{
@@ -356,11 +372,11 @@ div.container button:hover{
         transition: 0.3s;
         outline: none;
     }
-    .saibaMais{
+    #saibaMais{
         margin-top: -20px; 
         background: transparent;
     }
-    .saibaMais button{
+    #saibaMais button{
         margin-right: 5px;
         margin-left: 5px;
     }
