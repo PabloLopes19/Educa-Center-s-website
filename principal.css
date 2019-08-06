@@ -1,0 +1,456 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    background: #ecf0f1;
+}
+header{
+    background: #FF7043;
+    display: flex;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-top: -8px;
+    margin-right: -8px;
+    margin-left: -8px;
+    height: 90px;
+}
+.menu{
+    margin-top: 15px;
+}
+#menuMobile{
+    display: none;
+    justify-content: center;
+}
+#menuMobile button{
+    margin: 15px;
+    color: #333;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menuMobile h1{
+    font-size: 6px;
+}
+.titleEduca{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-name: titleECAn;
+    animation-duration: 2s;
+    margin-top: 0%;
+}
+@keyframes titleECAn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }  
+} 
+.logpDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+}
+@keyframes logoAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }  
+}
+img.logoEC{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.titleEC{
+    text-align: center;
+    margin-top: 0%;
+    color: #111;
+    font-family: 'Arial', sans-serif;
+    font-size: 75pt; 
+    cursor: default;
+}
+.menu{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    display: fixed;
+}
+.menu button{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial', sans-serif;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+    outline: none;
+}
+.menu button:hover{
+    color: #ccc;
+}
+.imgLogo{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 8px;
+    margin-left: -20px;
+    width: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    float: none;
+}
+.imgLogo:hover{
+    border-left: 40px solid #fff;
+}
+#sec1{
+    margin-top: 120px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: calc(100vh - 14em);
+    padding: 50px;
+    margin-bottom: 70px;
+}
+#backLoko{
+    background-image: url(../assets/conference-learning-meeting-7095.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+#backfoda{
+    background-image: url(../assets/advice-advise-advisor-70962.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+section div{
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+section h1{
+    font-family: sans-serif;
+    color: #111;
+    border-bottom: 3px solid #333;
+    padding-bottom: 20px;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 35pt;
+    animation-name: title1;
+    animation-duration: 1s;
+    cursor: default;
+}
+section p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 15pt;
+    width: 450px;
+    color: #333;
+    animation-name: text1;
+    animation-duration: 1s;  
+    cursor: default;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    margin-top: 0%;
+    border-radius: 8px;
+}
+.container div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 20%;
+    margin: 20px;
+    animation-name: divAnimar;
+    animation-duration: 1.5s;
+}
+.formCursos {
+    border: solid rgba(189, 195, 199,.4) 2px;
+    transition: 0.2s;
+}
+.formCursos:hover{
+    border: solid #ecf0f1 2px;
+    box-shadow: 0 0 20px -5px;
+
+}
+.nossosCursos{
+    color: #111;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    cursor: default;
+}
+.formCursos h1{
+    color: #111;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    transition: 0.5s;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 15pt;
+    cursor: default;
+}
+div.container button{
+    background: #42A5F5;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 15pt;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    outline: none;
+}
+div.container button:hover{
+    margin-right: 0px;
+    margin-left: 0px;
+    background: #01579B;
+}
+.btnform{
+    border: none;
+}
+.saibaMais button {
+    border: solid rgba(189, 195, 199,.4) 2px;
+}
+@keyframes divAnimar{
+    from{
+        margin-top: 25%;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.titleContainer{
+    position: absolute;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    animation-name: txtAnim;
+    cursor: default;
+    animation-duration: 2s;
+}
+@keyframes txtAnim{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 1150px){
+    .container{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 670px){
+    .titleEC{
+        font-size: 40pt;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #menuMobile{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menu button{
+        color: #333;
+    }
+    .logo{
+        opacity: 0;
+    }
+    .logpDiv img{
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        margin-top: -10px;
+    }
+    .titleEC{
+        font-size: 35pt;
+    }
+    section h1{
+        font-size: 25pt;
+        text-align: center;
+    }
+    section p{
+        text-align: justify;
+        margin: 20px;
+        font-size: 12pt;
+    }
+    .container {
+        justify-content: center;
+        width: 200px;
+    }
+    .formCursos h1{
+        font-size: 10pt;
+    }
+    div.container button{
+        background: #42A5F5;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Arial', sans-serif;
+        border: none;
+        border-radius: 12px;
+        padding: 10px;
+        font-size: 10pt;
+        cursor: pointer;
+        margin-right: 15px;
+        margin-left: 15px;
+        transition: 0.3s;
+        outline: none;
+    }
+    .saibaMais{
+        margin-top: -20px; 
+        background: transparent;
+    }
+    .saibaMais button{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #insta{
+        background:#74b9ff;
+    }
+    #facebook{
+        background: #3b5998;
+    }
+    .cret{
+        display: none;
+    }
+    section{
+        height: 100px;
+    }
+    section h1{
+        font-size: 20pt;
+        width: 200px;
+    }
+}
+/* Configuração do footer */
+#cretidos{
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    display: none;
+    position: absolute;
+}
+footer{
+    background: #2E2E2E;
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    height: 250px;
+}
+footer #insta, #facebook{
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 30px;
+    font-size: 30pt;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#insta:hover{
+    background:#74b9ff;
+}
+#facebook:hover{
+    background: #3b5998;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    cursor: default;
+    overflow: hidden;
+}
+.cretidos{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.cretidos:hover{
+    color: #333;
+}
+.btnMais{
+    color: #fff;
+    text-decoration: none;
+}
+.cret{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    font-size: 20px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cret:hover{
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+}
+@media only screen and (max-width: 1000px) {
+    section {
+        height: 300px;
+    }
+}
