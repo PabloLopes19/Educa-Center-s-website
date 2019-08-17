@@ -18,6 +18,8 @@
         <button onclick="redirectCursos()"><i class="material-icons">pageview</i><h1>Cursos</h1></button>
         <button onclick="redirectSobre()"><i class="material-icons">search</i><h1>Sobre</h1></button>
         <button onclick="redirectContato()"><i class="material-icons">call</i> <h1>Contato</h1></button>
+
+        <i id="darkModeBtnMobile" class="material-icons">invert_colors</i>
     </div>
     <div id="content">
             <div align="center" class="logo">
@@ -30,12 +32,14 @@
                 <button onclick="loop()">sobre</button>
                 <button onclick="redirectContato()">contato</button>
             </div>
+
+            <i id="darkModeBtn" class="material-icons">invert_colors</i>
         </header>
         <div class="pageTitle">
             <h1>Sobre nós</h1>
         </div>
         <div class="content1">
-            <h1>Coordenadores</h1>
+            <h1 id="cargo1">Coordenadores</h1>
             <div class="formPessoa">
                 <h1>Alexandre Corso</h1>
                 <p>Diretor da Educa Center</p>
@@ -44,7 +48,7 @@
                 <h1>Cíntia Gonsalves</h1>
                 <p>Dona da Educa Center</p>
             </div>
-            <h1>Instrutores</h1>
+            <h1 id="cargo2">Instrutores</h1>
             <div class="formPessoa">
                 <h1>André Rodrígues</h1>
             </div>
@@ -54,7 +58,7 @@
             <div class="formPessoa">
                 <h1>Richard</h1>
             </div>          
-            <h1>Recepcionista</h1>
+            <h1 id="cargo3">Recepcionista</h1>
             <div class="formPessoa">
                 <h1>Morgana</h1>
             </div>  
@@ -68,5 +72,6 @@
         <button onclick="easterEgg()"class="cret">Créditos</button>
         <p>© EducaCenter 2019</p>
     </footer>
+    <script src="js/darkMode.js"></script>
 </body>
 </html>

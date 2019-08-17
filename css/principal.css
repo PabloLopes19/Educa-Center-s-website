@@ -5,35 +5,106 @@ body{
     display: flex;
     flex-direction: column;
     height: 70%;
-    background: linear-gradient(to bottom right, #FF7043, #FBC02D);
+    background: #ecf0f1;
+    margin: 0;
+    padding: 0;
 }
 header{
     display: flex;  
     background-attachment: fixed;
     background-repeat: no-repeat;
-    margin-top: -8px;
-    margin-right: -8px;
-    margin-left: -8px;
     height: 90px;
+    background: #ff7043;
 }
 .menu{
     margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 #menuMobile{
     display: none;
-    justify-content: center;
+    justify-content: left;
+    background: #ff7043;
 }
 #menuMobile button{
-    margin: 15px;
-    color: #333;
-    background: #fff;
+    margin: 10px;
+    color: #fff;
+    background: transparent;
     border-radius: 20px;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
+#menumobile button:active{
+    color: #ccc;
+}
 #menuMobile h1{
     font-size: 6px;
+}
+#darkModeBtnMobile{
+    position: absolute;
+    top: 3%;
+    left: 84%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#darkModeBtnMobile:active{
+    color: #ccc;
+}
+#mural{
+    margin-top: 50px;
+}
+.butoes{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-bottom: 20px;    
+    align-items: center;
+}
+#btnDireita, #btnEsquerda{
+    padding: 10px;
+    height: 50px;
+    margin: 20px;
+    background: #111;
+    color: #fff;
+    border: 2px solid #111;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+}
+#btnDireita:hover, #btnEsquerda:hover{
+    background: #111;
+    color: #fff;
+    transition: all 0.2s;
+    transform: translateX(-5px);
+}
+#btnDireita p, #btnEsquerda p{
+    transform: translateY(-50%);
+} 
+#btnDireita:hover{transform: translateX(5px)};
+#btnDireita:active, #btnEsquerda:active{
+    transform: translateZ(3px)
+}
+#mural img{
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .titleEduca{
     display: flex;
@@ -42,6 +113,7 @@ header{
     animation-name: titleECAn;
     animation-duration: 2s;
     margin-top: 0%;
+    margin-bottom: -170px;
 }
 @keyframes titleECAn{
     from{
@@ -76,7 +148,7 @@ img.logoEC{
 .titleEC{
     text-align: center;
     margin-top: 0%;
-    color: #fff;
+    color: #111;
     font-family: 'Arial', sans-serif;
     font-size: 75pt; 
     cursor: default;
@@ -102,6 +174,27 @@ img.logoEC{
 .menu button:hover{
     color: #ccc;
 }
+#darkModeBtn{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    transition: 0.2s;
+}
+#darkModeBtn:hover{
+    color: #eee;
+}
+#darkModeBtn:active{
+    color: #ccc;
+}
 .imgLogo{
     position: absolute;
     display: block;
@@ -109,11 +202,13 @@ img.logoEC{
     border: 10px solid #fff;
     border-left: 15px solid #fff;
     border-radius: 8px;
-    margin-left: -20px;
+    margin-left: -10px;
     width: 50px;
     transition: 0.3s;
     cursor: pointer;
     float: none;
+    margin-top: 10px;
+    height: 50px;
 }
 .imgLogo:hover{
     border-left: 40px solid #fff;
@@ -126,18 +221,16 @@ section{
     justify-content: center;
     align-items: center;
     background: #fff;
-    margin-left: -8px;
-    margin-right: -8px;
     height: calc(100vh - 14em);
     padding: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 150px;
 }
 #backLoko{
     background-image: url(../assets/conference-learning-meeting-7095.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 #backfoda{
     background-image: url(../assets/advice-advise-advisor-70962.jpg);
@@ -201,9 +294,14 @@ section p{
     margin: 20px;
     animation-name: divAnimar;
     animation-duration: 1.5s;
+    transition: 0.3s;
+}
+.container .formCursos:hover{
+    box-shadow: 0 0 20px -5px;
+    background: #fff;
 }
 .nossosCursos{
-    color: #fff;
+    color: #111;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25pt;
@@ -277,13 +375,32 @@ div.container button:hover{
     .container{
         width: 600px;
     }
+    .butoes{
+        justify-content: center;
+    }
 }
 @media only screen and (max-width: 670px){
     .titleEC{
         font-size: 40pt;
     }
+    section div{
+        height: 200px;
+    }
+    section div h1{
+        font-size: 25pt;
+    }
+    section div p{
+        font-size: 12pt;
+    }
+    #mural{
+        display: none;
+    }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+    #mural img{
+        height: 120px;
+        background: #333;
+    }
     body{
         display: flex;
         justify-content: center;
@@ -310,19 +427,34 @@ div.container button:hover{
         justify-content: center;
         width: 150px;
         height: 150px;
-        margin-top: -10px;
+        margin-top: 30px;
     }
     .titleEC{
         font-size: 35pt;
     }
-    section h1{
-        font-size: 25pt;
-        text-align: center;
+    section div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 150px;
+        width: 200px;
+        background: rgba(189, 195, 199,0.8);
     }
-    section p{
-        text-align: justify;
-        margin: 20px;
-        font-size: 12pt;
+    section h1{
+        font-size: 10pt;
+        text-align: center;
+        color: #fff;
+        border-bottom: 3px solid #fff;
+        margin-bottom: 25px;
+        padding-bottom: 5px;
+    }
+    section div p{
+        margin: 10px;
+        margin-top: -20px;
+        font-size: 10pt;
+        width: 150px;
+        color: #fff;
     }
     .container {
         justify-content: center;
@@ -365,10 +497,18 @@ div.container button:hover{
     }
     section{
         height: 100px;
+        background-size: cover;
+        background-repeat: repeat;
+        background-position-y: center;
+        background-color: transparent;
+        background-image: none;
     }
     section h1{
         font-size: 20pt;
         width: 200px;
+    }
+    #backLoko{
+        margin-bottom: 0px;
     }
 }
 /* Configuração do footer */
@@ -381,9 +521,6 @@ div.container button:hover{
 }
 footer{
     background: #2E2E2E;
-    margin-right: -8px;
-    margin-left: -8px;
-    margin-bottom: -8px;
     height: 250px;
 }
 footer #insta, #facebook{
@@ -413,7 +550,7 @@ footer p{
     text-decoration: none;
     transition: 0.3s;
 }
-.cretidos:hover{
+.cret:hover .cretidos{
     color: #333;
 }
 .btnMais{

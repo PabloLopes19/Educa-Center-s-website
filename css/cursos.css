@@ -3,14 +3,19 @@ html{
 }
 body{
     display: flex;
-    background: linear-gradient(to bottom right, #FF7043, #FBC02D);
+    background: #ecf0f1;
     background-attachment: fixed;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 header{
     display: flex;  
+    background: #FF7043;
+    height: 90px;
+    margin: 0;
 }
-#menuMobile{
+/* #menuMobile{
     display: none;
     justify-content: center;
 }
@@ -25,11 +30,50 @@ header{
 }
 #menuMobile h1{
     font-size: 6px;
+} */
+#menuMobile{
+    display: none;
+    justify-content: left;
+    background: #ff7043;
+}
+#menuMobile button{
+    margin: 10px;
+    color: #fff;
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menumobile button:active{
+    color: #ccc;
+}
+#menuMobile h1{
+    font-size: 6px;
+}
+#darkModeBtnMobile{
+    position: absolute;
+    top: 3%;
+    left: 84%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#darkModeBtnMobile:active{
+    color: #ccc;
 }
 .menu{
     display: block;
     margin-right: auto;
     margin-left: auto;
+    display: fixed;
+    margin-top: 15px;
 }
 .menu button{
     background: transparent;
@@ -46,6 +90,27 @@ header{
 .menu button:hover{
     color: #ccc;
 }
+#darkModeBtn{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    transition: all 0.2s;
+}
+#darkModeBtn:hover{
+    color: #eee;
+}
+#darkModeBtn:active{
+    color: #ccc;
+}
 .imgLogo{
     position: absolute;
     display: block;
@@ -53,11 +118,12 @@ header{
     border: 10px solid #fff;
     border-left: 15px solid #fff;
     border-radius: 8px;
-    margin-left: -20px;
+    margin-left: -10px;
     width: 50px;
     transition: 0.3s;
     cursor: pointer;
     float: none;
+    margin-top: 10px;
 }
 .imgLogo:hover{
     border-left: 40px solid #fff;
@@ -93,6 +159,13 @@ header{
     font-size: 15pt;
     cursor: default;
 }
+.formCursos{
+    transition: all 0.3s;
+}
+.container .formCursos:hover{
+    box-shadow: 0 0 20px -5px;
+    background: #fff;
+}
 div.container button{
     background: #42A5F5;
     color: white;
@@ -111,7 +184,7 @@ div.container button{
 div.container button:hover{
     margin-right: 0px;
     margin-left: 0px;
-    color: #ddd;
+    background:  #01579B;
 }
 @keyframes divAnimar{
     from{
@@ -124,7 +197,7 @@ div.container button:hover{
 }
 .titleContainer{
     position: absolute;
-    color: white;
+    color: #111;
     font-family: 'Arial', sans-serif;
     text-align: center;
 }
@@ -241,6 +314,12 @@ footer i{
     #menuMobile{
         display: flex;
     }
+    #insta{
+        background: #74b9ff;
+    }
+    #facebook{
+        background: #3b5998;
+    }
 }
 #cretidos{
     color: #fff;
@@ -251,9 +330,7 @@ footer i{
 }
 footer{
     background: #2E2E2E;
-    margin-right: -8px;
-    margin-left: -8px;
-    margin-bottom: -10px;
+    margin-top: 50px;
     height: 250px;
 }
 footer #insta, #facebook{

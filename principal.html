@@ -18,6 +18,10 @@
         <button onclick="redirectCursos()"><i class="material-icons">pageview</i><h1>Cursos</h1></button>
         <button onclick="redirectSobre()"><i class="material-icons">search</i><h1>Sobre</h1></button>
         <button onclick="redirectContato()"><i class="material-icons">call</i> <h1>Contato</h1></button>
+
+        <div class="colorTheme">
+            <i id="darkModeBtnMobile" class="material-icons">invert_colors</i>
+        </div>
     </div>
     <div id="content">
             <div align="center" class="logo">
@@ -31,7 +35,7 @@
                 <button onclick="redirectContato()">contato</button>
             </div>
             <div class="colorTheme">
-                <i id="darkModeBtn" class="material-icons">invert_colors</i>
+                <i title="Modo Noturno" id="darkModeBtn" class="material-icons">invert_colors</i>
             </div>
         </header>
         <div class="logpDiv">
@@ -40,6 +44,16 @@
         <div class="titleEduca">
             <h1 id="teste" class="titleEC">Educa center</h1>
         </div>
+        <div id="mural" class="w3-content w3-display-container">
+            <div class="butoes">
+                <button id="btnEsquerda" onclick="plusDivs(-1)"><p>&#10094;</p></button>
+                    <img class="mySlides" src="assets/advice-advise-advisor-7096.jpg" style="width:100%">
+                    <img class="mySlides" src="assets/advice-advise-advisor-70962.jpg" style="width:100%">
+                    <img class="mySlides" src="assets/conference-learning-meeting-7095.jpg" style="width:100%">
+                <button id="btnDireita" onclick="plusDivs(1)"><p>&#10095;</p></button>
+            </div>
+        </div>
+        <script src="js/slideGit.js"></script>
         <div id="teste213">
             <section id="backLoko" id="sec1">
                 <div> <!-- Parte 1-->
@@ -50,7 +64,7 @@
             <section id="backfoda">
                 <div id="fodao"> <!-- Parte 1-->
                     <h1 >Nosso objetivo</h1>
-                    <p>Ser sonônimo de excelência em qualificação profissional entre a população de joinville e região.</p>
+                    <p>Ser sinônimo de excelência em qualificação profissional entre a população de Joinville e região.</p>
                 </div>
             </section>
         </div>

@@ -40,3 +40,26 @@ farmacia = () => {
 jogos = () => {
     window.location.href = "jogos.html";
 }
+
+// algoritmo do modo escuro
+
+darkMode = () => {
+    document.querySelector('body').style.background = "#333";
+    document.querySelector('.titleContainer').style.color = "#111";
+}
+lightMode = () => {
+    document.querySelector('body').style.background = "#ecf0f1";
+    document.querySelector('.titleContainer').style.color = "#fff";
+}
+
+var flag = 1;
+
+$('#darkModeBtn').click(() => {
+    if(flag == 1){
+        darkMode();
+        flag = 0;
+    }else{
+        lightMode();
+        flag = 1;
+    }
+});

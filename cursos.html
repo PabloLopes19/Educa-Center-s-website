@@ -9,16 +9,21 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ab5fad5172.js"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Cursos | Educa Center</title>
 </head>
-<body>
+<body class="fundo">
     <div id="menuMobile">
         <button onclick="redirectPrincipal()"><i class="material-icons">home</i> <h1>Principal</h1></button>
         <button onclick="loop()"><i class="material-icons">pageview</i><h1>Cursos</h1></button>
         <button onclick="redirectSobre()"><i class="material-icons">search</i><h1>Sobre</h1></button>
         <button onclick="redirectContato()"><i class="material-icons">call</i> <h1>Contato</h1></button>
+
+        <div class="colorTheme">
+           <i id="darkModeBtnMobile" class="material-icons">invert_colors</i>
+        </div>
     </div>
     <div align="center" class="logo">
         <img onclick="easterEgg()" class="imgLogo" src="assets/logo 2019.jpg"/>
@@ -29,6 +34,9 @@
             <button onclick="loop()">cursos</button>
             <button onclick="redirectSobre()">sobre</button>
             <button onclick="redirectContato()">contato</button>
+        </div>
+        <div class="colorTheme">
+           <i id="darkModeBtn" class="material-icons">invert_colors</i>
         </div>
     </header>
     <div class="title">
@@ -106,7 +114,7 @@
                 <button onclick="hardware()" class="btnform">Mais</button>
         </div>
         <div class="formCursos">
-                <h1>Robótica digital</h1>
+                <h1>Robótica</h1>
                 <p>
     
                 </p>
