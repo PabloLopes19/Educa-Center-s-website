@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/credits.css">
     <script src="https://kit.fontawesome.com/ab5fad5172.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="assets/logo-2019_2_.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/principal.js"></script>
@@ -18,6 +19,9 @@
         <button onclick="redirectSobre()"><i class="material-icons">search</i><h1>Sobre</h1></button>
         <button onclick="redirectContato()"><i class="material-icons">call</i> <h1>Contato</h1></button>
     </div>
+        <div class="colorTheme">
+            <i id="darkModeBtnMobile" class="material-icons">invert_colors</i>
+        </div>
     <div id="content">
             <div align="center" class="logo">
             <img onclick="loop()" class="imgLogo" src="assets/logo 2019.jpg"/>
@@ -29,9 +33,11 @@
                 <button onclick="redirectSobre()">sobre</button>
                 <button onclick="redirectContato()">contato</button>
             </div>
+
+            <i id="darkModeBtn" title="Modo noturno" class="material-icons">invert_colors</i>
         </header>
     <div class="container">
-        <h1>Criadores do Site</h1>
+        <h1 id="title">Criadores do Site</h1>
         <div class="caixas">
             <div class="forms">
                 <h1>Pablo Lopes</h1>
@@ -53,5 +59,39 @@
             </div>
         </div>
     </div>
+    <script>
+        var button = document.querySelector('#darkModeBtn');
+        var buttonMobile = document.querySelector('#darkModeBtnMobile');
+        
+        darkMode = () => {
+            document.querySelector('body').style.background = "#333";
+            document.querySelector('#title').style.color = "#fff";
+        }
+        lightMode = () => {
+            document.querySelector('body').style.background = "#ecf0f1";
+            document.querySelector('#title').style.color = "#111";
+        }
+
+        var flag = 1;
+
+        button.onclick = () => {
+            if(flag == 1){
+                darkMode();
+                flag = 0;
+            }else{
+                lightMode();
+                flag = 1;
+            }
+        }
+        buttonMobile.onclick = () => {
+            if(flag == 1){
+                darkMode();
+                flag = 0;
+            }else{
+                lightMode();
+                flag = 1;
+            }
+        }
+    </script>
 </body>
 </html>

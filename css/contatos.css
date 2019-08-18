@@ -16,19 +16,41 @@ header{
 }
 #menuMobile{
     display: none;
-    justify-content: center;
+    justify-content: left;
+    background: #ff7043;
 }
 #menuMobile button{
-    margin: 15px;
-    color: #333;
-    background: #fff;
+    margin: 10px;
+    color: #fff;
+    background: transparent;
     border-radius: 20px;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
+#menumobile button:active{
+    color: #ccc;
+}
 #menuMobile h1{
     font-size: 6px;
+}
+#darkModeBtnMobile{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 84%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#darkModeBtnMobile:active{
+    color: #ccc;
 }
 .menu{
     display: block;
@@ -161,6 +183,9 @@ p:hover{
     #menuMobile{
         display: flex;
     }
+    #darkModeBtnMobile{
+        display: flex;
+    }
     .logo{
         display: none;
     }
@@ -176,8 +201,11 @@ p:hover{
     .logo{
         opacity: 0;
     }
+    #tel{
+        font-size: 16pt;
+    }
     .conjuntos p{
-        font-size: 7pt;
+        font-size: 10pt;
     }
     .conteudo{
         margin-top: -50px;

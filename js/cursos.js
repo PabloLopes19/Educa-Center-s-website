@@ -63,3 +63,12 @@ $('#darkModeBtn').click(() => {
         flag = 1;
     }
 });
+$('#darkModeBtnMobile').click(() => {
+    if(flag == 1){
+        darkMode();
+        flag = 0;
+    }else{
+        lightMode();
+        flag = 1;
+    }
+});

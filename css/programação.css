@@ -16,23 +16,41 @@ header{
 }
 #menuMobile{
     display: none;
-    justify-content: center;
+    justify-content: left;
+    background: #ff7043;
 }
 #menuMobile button{
-    margin: 15px;
-    color: #333;
-    background: #fff;
+    margin: 10px;
+    color: #fff;
+    background: transparent;
     border-radius: 20px;
     border: none;
     padding: 10px;
     cursor: pointer;
-    transition: 0.3s;
 }
-#menuMobile button:active{
-    background: #bbb;
+#menumobile button:active{
+    color: #ccc;
 }
 #menuMobile h1{
     font-size: 6px;
+}
+#darkModeBtnMobile{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 84%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#darkModeBtnMobile:active{
+    color: #ccc;
 }
 .menu{
     display: block;
@@ -259,6 +277,9 @@ header{
     }
 }
 @media only screen and (max-width: 650px) {
+    #darkModeBtnMobile{
+        display: flex;
+    }
     header{
         display: none;
     }

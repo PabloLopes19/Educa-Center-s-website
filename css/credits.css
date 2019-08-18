@@ -3,29 +3,55 @@ html{
 }
 body{
     display: flex;
-    background: linear-gradient(to bottom right, #FF7043, #FBC02D);
+    background: #ecf0f1;
     background-attachment: fixed;
     background-repeat: no-repeat;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 header{
     display: flex;  
+    background: #FF7043;
+    height: 90px;
 }
 #menuMobile{
     display: none;
-    justify-content: center;
+    justify-content: left;
+    background: #ff7043;
 }
 #menuMobile button{
-    margin: 15px;
-    color: #333;
-    background: #fff;
+    margin: 10px;
+    color: #fff;
+    background: transparent;
     border-radius: 20px;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
+#menumobile button:active{
+    color: #ccc;
+}
 #menuMobile h1{
     font-size: 6px;
+}
+#darkModeBtnMobile{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 84%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#darkModeBtnMobile:active{
+    color: #ccc;
 }
 .titleEduca{
     display: flex;
@@ -75,9 +101,9 @@ img.logoEC{
     font-size: 75pt; 
 }
 .menu{
-    display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 15px;
 }
 .menu button{
     background: transparent;
@@ -94,6 +120,27 @@ img.logoEC{
 .menu button:hover{
     color: #ccc;
 }
+#darkModeBtn{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    transition: 0.2s;
+}
+#darkModeBtn:hover{
+    color: #eee;
+}
+#darkModeBtn:active{
+    color: #ccc;
+}
 .imgLogo{
     position: absolute;
     display: block;
@@ -101,11 +148,12 @@ img.logoEC{
     border: 10px solid #fff;
     border-left: 15px solid #fff;
     border-radius: 8px;
-    margin-left: -20px;
+    margin-left: -10px;
     width: 50px;
     transition: 0.3s;
     cursor: pointer;
     float: none;
+    margin-top: 10px;
 }
 .imgLogo:hover{
     border-left: 40px solid #fff;
@@ -138,12 +186,13 @@ img.logoEC{
     }
 }
 .container h1{
-    color: white;
+    color: #111;
     font-family: 'Arial', sans-serif;
     font-size: 35pt;
     text-align: center;
     animation-name: h1Anima;
     animation-duration: 3s;
+    cursor: default;
 }
 .forms{
     background: #fff;
@@ -154,6 +203,10 @@ img.logoEC{
     border: none;
     border-radius: 8px;
     margin-left: 30px;
+    transition: all 0.3s;
+}
+.forms:hover{
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
 }
 .forms h1{
     color: #333;
@@ -179,9 +232,17 @@ img.logoEC{
     cursor: pointer;
     font-family: 'Arial', sans-serif;   
     margin: 10px;
+    transition: all 0.2s;
+}
+.forms button:hover{
+    background: #01579B;
+}
+.forms button:hover i{
+    transform: translateY(-2px);
 }
 .forms i{
     font-size: 20pt;
+    transition: all 0.3s;
 }
 .forms p{
     display: flex;
@@ -206,6 +267,9 @@ img.logoEC{
     }
 }
 @media only screen and (max-width: 600px) {
+    #darkModeBtnMobile{
+        display: flex;
+    }
     body{
         display: flex;
         justify-content: center;

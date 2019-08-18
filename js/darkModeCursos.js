@@ -1,4 +1,5 @@
 var button = document.querySelector('#darkModeBtn');
+var buttonMobile = document.querySelector('#darkModeBtnMobile');
 var title = document.querySelector('.titleProgramacao');
 
 darkMode = () => {
@@ -13,6 +14,15 @@ lightMode = () => {
 var flag = 1;
 
 button.onclick = () => {
+    if(flag == 1){
+        darkMode();
+        flag = 0;
+    }else{
+        lightMode();
+        flag = 1;
+    }
+}
+buttonMobile.onclick = () => {
     if(flag == 1){
         darkMode();
         flag = 0;
