@@ -221,6 +221,11 @@ div.container button:hover{
 footer{
     background: #333;
 }
+#place, #phone{
+    font-size: 13pt;
+    transform: translateY(3px);
+    margin-right: 5px;
+}
 footer h3{
     color: #fff;
     font-family: 'Arial', sans-serif;
@@ -331,7 +336,7 @@ footer i{
 footer{
     background: #2E2E2E;
     margin-top: 50px;
-    height: 250px;
+    height: 320px;
 }
 footer #insta, #facebook{
     color: #fff;

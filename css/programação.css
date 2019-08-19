@@ -13,6 +13,13 @@ header{
     display: flex;  
     background: #FF7043;
     height: 90px;
+    align-items: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 #menuMobile{
     display: none;
@@ -56,7 +63,7 @@ header{
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 15px;
+    margin-top: -17px;
 }
 .interesse, .fodao{
     display: flex;

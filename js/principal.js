@@ -27,7 +27,16 @@ function gitPablo(){
     window.open('https://github.com/PabloLopes19', '_blank');
 }
 function gitCarlos(){
-    window.open('https://www.instagram.com/grupoeducacenter/', '_blank');
+    window.open('https://github.com/MiyamuraH', '_blank');
+}
+function instaPablo(){
+    window.open('https://www.instagram.com/pablolopes19/', '_blank');
+}
+function instaCarlos(){
+    window.open('https://www.instagram.com/carlos_eduardo_balland/', '_blank');
+}
+function discord(){
+    window.open('https://discordapp.com/', '_blank');
 }
 
 // Algoritmo para implementar o mode noturno
@@ -50,10 +59,10 @@ LightMode = () => { // Função para mudar o tema para o padrão
     document.querySelector('body').style.background = "#ecf0f1"; // Muda a cor do background
     document.querySelector('.titleEC').style.color = "#111"; // Muda a cor do Título
     document.querySelector('.nossosCursos h1').style.color = "#111"; // Muda a cor do segundo título
-    document.querySelector('#btnDireita').style.border = "3px solid #111";
-    document.querySelector('#btnEsquerda').style.border = "3px solid #111";
-    document.querySelector('#btnDireita').style.background = "#111";
-    document.querySelector('#btnEsquerda').style.background = "#111";
+    document.querySelector('#btnDireita').style.border = "3px solid #333";
+    document.querySelector('#btnEsquerda').style.border = "3px solid #333";
+    document.querySelector('#btnDireita').style.background = "#333";
+    document.querySelector('#btnEsquerda').style.background = "#333";
     document.querySelector('#btnDireita').style.color = "#fff";
     document.querySelector('#btnEsquerda').style.color = "#fff";
 }
@@ -83,3 +92,19 @@ btnDarkModeMobile.onclick = () => {
         flag = 1;
     }
 } 
+
+var contador = document.querySelector('#contador');
+
+
+// Contador de visitantes
+
+if(typeof(Storage) != "undefined"){
+    if(localStorage.visitas){
+        localStorage.visitas = Number(localStorage.visitas) + 1;
+    }else{
+        localStorage.visitas = 1;
+    }
+    contador.innerHTML = localStorage.visitas + " pessoas já visitaram o nosso site!";
+}else{
+    document.write("Sem suporte à LocalStorage!");
+}

@@ -75,21 +75,23 @@ header{
     padding: 10px;
     height: 50px;
     margin: 20px;
-    background: #111;
+    background: #333;
     color: #fff;
-    border: 2px solid #111;
+    border: 2px solid #333;
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+#btnDireita p, #btnDireita p{
+    transition: all 0.2s;
 }
 #btnDireita:hover, #btnEsquerda:hover{
-    background: #111;
-    color: #fff;
-    transition: all 0.2s;
     transform: translateX(-5px);
 }
 #btnDireita p, #btnEsquerda p{
     transform: translateY(-50%);
+    transition: all 0.3s;
 } 
 #btnDireita:hover{transform: translateX(5px)};
 #btnDireita:active, #btnEsquerda:active{
@@ -521,7 +523,15 @@ div.container button:hover{
 }
 footer{
     background: #2E2E2E;
-    height: 250px;
+    height: 345px;
+}
+#contador{
+    font-size: 16pt;
+}
+#place, #phone{
+    font-size: 13pt;
+    transform: translateY(3px);
+    margin-right: 5px;
 }
 footer #insta, #facebook{
     color: #fff;
@@ -544,6 +554,7 @@ footer p{
     text-align: center;
     cursor: default;
     overflow: hidden;
+    font-family: 'Arial', sans-serif;
 }
 .cretidos{
     color: white;
