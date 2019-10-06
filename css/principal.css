@@ -373,9 +373,15 @@ div.container button:hover{
         opacity: 1;
     }
 }
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: 917px) {
+    #yey {
+        justify-content: center;
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 1500px){
     .container{
-        width: 600px;
+        width: 900px;
     }
     .butoes{
         justify-content: center;
@@ -458,7 +464,7 @@ div.container button:hover{
         width: 150px;
         color: #fff;
     }
-    .container {
+    #yey {
         justify-content: center;
         width: 200px;
     }
@@ -591,4 +597,8 @@ footer p{
     section {
         height: 300px;
     }
+}
+.btnRede {
+    display: flex;
+    justify-content: center;
 }

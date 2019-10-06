@@ -95,7 +95,6 @@ btnDarkModeMobile.onclick = () => {
 
 var contador = document.querySelector('#contador');
 
-
 // Contador de visitantes
 
 if(typeof(Storage) != "undefined"){
@@ -108,3 +107,26 @@ if(typeof(Storage) != "undefined"){
 }else{
     document.write("Sem suporte à LocalStorage!");
 }
+
+mudaHorario = () => {
+    var dia = new Date();
+    var horas = dia.getHours();    
+
+    if(horas > 6 && horas < 12){
+        LightMode();
+    }else if(horas >= 12 && horas < 20){
+        LightMode();
+    }else if(horas >= 20 && horas < 24){
+        DarkMode();
+        flag = 0;
+    }else if(horas >= 0 && horas <= 5){
+        DarkMode();
+        flag = 0;
+    }
+    console.log(`São ${horas} horas`);
+}
+
+setTimeout(mudaHorario, 1000);
+
+
+mudaHorario();

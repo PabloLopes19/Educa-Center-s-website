@@ -38,3 +38,25 @@ btnClickMobile.onclick = () => {
         flag = 1;
     }
 }
+mudaHorario = () => {
+    var dia = new Date();
+    var horas = dia.getHours();   
+
+    if(horas > 6 && horas < 12){
+        ligh();
+    }else if(horas >= 12 && horas < 20){
+        ligh();
+    }else if(horas >= 20 && horas < 24){
+        dark();
+        flag = 0;
+    }else if(horas >= 0 && horas <= 5){
+        dark();
+        flag = 0;
+    }
+    console.log(`São ${horas} horas`);
+}
+
+setTimeout(mudaHorario, 1000);
+
+
+mudaHorario();

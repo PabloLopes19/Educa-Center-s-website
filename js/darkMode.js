@@ -39,3 +39,27 @@ btnDarkModeMobile.onclick = () => {
         flag = 1;
     }
 }
+
+mudaHorario = () => {
+    var dia = new Date();
+    // var horas = dia.getHours();    
+    var horas = 23;
+
+    if(horas > 6 && horas < 12){
+        lightMode();
+    }else if(horas >= 12 && horas < 20){
+        lightMode();
+    }else if(horas >= 20 && horas < 24){
+        darkMode();
+        flag = 0;
+    }else if(horas >= 0 && horas <= 5){
+        darkMode();
+        flag = 0;
+    }
+    console.log(`São ${horas} horas`);
+}
+
+setTimeout(mudaHorario, 1000);
+
+
+mudaHorario();
