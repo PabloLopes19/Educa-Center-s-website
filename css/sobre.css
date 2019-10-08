@@ -11,7 +11,7 @@ body{
 }
 header{
     display: flex;  
-    background: #ff7043;
+    background: #313131;
     height: 90px;
 }
 /* #menuMobile{
@@ -33,7 +33,7 @@ header{
 #menuMobile{
     display: none;
     justify-content: left;
-    background: #ff7043;
+    background: #313131;
 }
 #menuMobile button{
     margin: 10px;
@@ -205,7 +205,7 @@ img.logoEC{
     cursor: default;
 }
 .formPessoa{
-    background: #fff;
+    background: #313131;
     width: 400px;
     padding: 30px;
     margin: 30px;
@@ -218,7 +218,7 @@ img.logoEC{
 }
 .formPessoa h1{
     text-align: center;
-    color: #333;
+    color: #fff;
     font-family: 'Arial', sans-serif;
     font-size: 25pt;
     margin: 10px;
@@ -226,12 +226,12 @@ img.logoEC{
 .formPessoa p{
     font-family: 'Arial', sans-serif;
     text-align: center;
-    color: #000;
+    color: #E6B31E;
     cursor: default;
 }
 .formPessoa:hover{
     box-shadow: 0 0 20px -5px;
-    background: #fff;
+    background: #313131;
 }
 @keyframes caixas{
     from{

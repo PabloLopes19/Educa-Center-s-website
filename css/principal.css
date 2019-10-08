@@ -14,7 +14,7 @@ header{
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 90px;
-    background: #ff7043;
+    background: #313131;
 }
 .menu{
     margin-top: 15px;
@@ -24,7 +24,7 @@ header{
 #menuMobile{
     display: none;
     justify-content: left;
-    background: #ff7043;
+    background: #313131;
 }
 #menuMobile button{
     margin: 10px;
@@ -151,9 +151,12 @@ img.logoEC{
     text-align: center;
     margin-top: 0%;
     color: #111;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Sol';
     font-size: 75pt; 
     cursor: default;
+}
+#educaYey{
+    color: #FBC90D;
 }
 .menu{
     display: block;
@@ -288,7 +291,7 @@ section p{
     flex-direction: column;
     width: 350px;
     padding: 20px;
-    background: #fff;
+    background: #313131;
     border: none;
     border-radius: 10px;
     justify-content: center;
@@ -300,7 +303,6 @@ section p{
 }
 .container .formCursos:hover{
     box-shadow: 0 0 20px -5px;
-    background: #fff;
 }
 .nossosCursos{
     color: #111;
@@ -313,7 +315,7 @@ section p{
     border: 3px solid #f47620;
 }
 .formCursos h1{
-    color: #000;
+    color: #fff;
     font-family: 'Arial', sans-serif;
     text-align: center;
     transition: 0.5s;
@@ -323,7 +325,8 @@ section p{
     cursor: default;
 }
 div.container button{
-    background: #42A5F5;
+    /* background: #42A5F5; */
+    background: #E6B31E;
     color: white;
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
@@ -340,7 +343,7 @@ div.container button{
 div.container button:hover{
     margin-right: 0px;
     margin-left: 0px;
-    background: #01579B;
+    background: #997405;
 }
 @keyframes divAnimar{
     from{
@@ -568,7 +571,7 @@ footer p{
     transition: 0.3s;
 }
 .cret:hover .cretidos{
-    color: #333;
+    color: #fff;
 }
 .btnMais{
     color: #fff;
@@ -589,9 +592,10 @@ footer p{
     transition: 0.3s;
 }
 .cret:hover{
-    background: #fff;
-    color: #333;
+    background: #E6B31E;
+    color: #000;
     border-radius: 8px;
+    border: 3px solid #E6B31E;
 }
 @media only screen and (max-width: 1000px) {
     section {

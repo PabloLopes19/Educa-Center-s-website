@@ -3,7 +3,7 @@ var btnClick = document.querySelector('#darkModeBtn');
 var btnClickMobile = document.querySelector('#darkModeBtnMobile');
 
 dark = () => {
-    fundo.style.background = "#333";
+    fundo.style.background = "#444";
     document.querySelector('#subtitulo1').style.color = "#fff";
     document.querySelector('#subtitulo2').style.color = "#fff";
     document.querySelector('#subtitulo3').style.color = "#fff";

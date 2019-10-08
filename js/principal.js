@@ -45,7 +45,7 @@ var btnDarkMode = document.querySelector('#darkModeBtn'); // Pega o componente d
 var btnDarkModeMobile = document.querySelector('#darkModeBtnMobile');
 
 DarkMode = () => { // Função para mudar o tema do sistema
-    document.querySelector('body').style.background = "#333"; // Muda a cor do background
+    document.querySelector('body').style.background = "#444"; // Muda a cor do background
     document.querySelector('.titleEC').style.color = "#fff"; // Muda a cor do título
     document.querySelector('.nossosCursos h1').style.color = "#fff"; // Muda a cor do segundo título
     document.querySelector('#btnDireita').style.border = "3px solid #fff";
@@ -103,7 +103,11 @@ if(typeof(Storage) != "undefined"){
     }else{
         localStorage.visitas = 1;
     }
-    contador.innerHTML = localStorage.visitas + " pessoas já visitaram o nosso site!";
+    if(localStorage.visitas == 1){
+        contador.innerHTML = localStorage.visitas + " visitante";
+    }else{
+        contador.innerHTML = localStorage.visitas + " visitantes";
+    }
 }else{
     document.write("Sem suporte à LocalStorage!");
 }

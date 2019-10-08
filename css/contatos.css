@@ -11,13 +11,13 @@ body{
 }
 header{
     display: flex;  
-    background: #FF7043;
+    background: #313131;
     height: 90px;
 }
 #menuMobile{
     display: none;
     justify-content: left;
-    background: #ff7043;
+    background: #313131;
 }
 #menuMobile button{
     margin: 10px;

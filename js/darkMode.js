@@ -5,7 +5,7 @@ var btnDarkMode = document.querySelector('#darkModeBtn');
 var btnDarkModeMobile = document.querySelector('#darkModeBtnMobile');
 
 darkMode = () => {
-    document.querySelector('body').style.background = "#333";
+    document.querySelector('body').style.background = "#444";
     document.querySelector('.pageTitle h1').style.color = "#fff";
     document.querySelector('#cargo1').style.color = "#fff";
     document.querySelector('#cargo2').style.color = "#fff";

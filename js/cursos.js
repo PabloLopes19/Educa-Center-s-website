@@ -84,7 +84,7 @@ function discord(){
 // algoritmo do modo escuro
 
 darkMode = () => {
-    document.querySelector('body').style.background = "#333";
+    document.querySelector('body').style.background = "#444";
     document.querySelector('.titleContainer').style.color = "#fff";
 }
 lightMode = () => {

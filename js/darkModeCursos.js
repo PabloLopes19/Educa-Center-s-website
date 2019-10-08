@@ -46,7 +46,7 @@ var buttonMobile = document.querySelector('#darkModeBtnMobile');
 var title = document.querySelector('.titleProgramacao');
 
 darkMode = () => {
-    document.querySelector('body').style.background = "#333";
+    document.querySelector('body').style.background = "#444";
     title.style.color = "#fff";
 }
 lightMode = () => {

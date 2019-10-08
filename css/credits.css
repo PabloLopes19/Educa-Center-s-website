@@ -12,13 +12,13 @@ body{
 }
 header{
     display: flex;  
-    background: #FF7043;
+    background: #313131;
     height: 90px;
 }
 #menuMobile{
     display: none;
     justify-content: left;
-    background: #ff7043;
+    background: #313131;
 }
 #menuMobile button{
     margin: 10px;
@@ -223,7 +223,7 @@ img.logoEC{
 }
 .forms button{
     color: white;
-    background: #42A5F5;
+    background: #E6B31E;
     border: none;
     border-radius: 8px;
     padding: 10px;
@@ -235,7 +235,7 @@ img.logoEC{
     transition: all 0.2s;
 }
 .forms button:hover{
-    background: #01579B;
+    background: #997405;
 }
 .forms button:hover i{
     transform: translateY(-2px);
