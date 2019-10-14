@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'FontEducaCenter';
+    src: url('../fonts/digitalserialbold.ttf') format('truetype'); 
+}   
 html{
     scroll-behavior: smooth;
 }
@@ -151,12 +155,18 @@ img.logoEC{
     text-align: center;
     margin-top: 0%;
     color: #111;
-    font-family: 'Sol';
+    font-family: 'FontEducaCenter';
     font-size: 75pt; 
     cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
 }
 #educaYey{
-    color: #FBC90D;
+    color: #ffc90b;
 }
 .menu{
     display: block;
