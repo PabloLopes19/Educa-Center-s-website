@@ -42,8 +42,8 @@ btnDarkModeMobile.onclick = () => {
 
 mudaHorario = () => {
     var dia = new Date();
-    // var horas = dia.getHours();    
-    var horas = 23;
+    var horas = dia.getHours();    
+    // var horas = 23;
 
     if(horas > 6 && horas < 12){
         lightMode();

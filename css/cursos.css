@@ -239,6 +239,9 @@ footer i{
     .container {
         width: 600px;
     }
+    .titleContainer{
+        font-size: 40pt;
+    }
 }
 @media only screen and (max-width: 670px) {
     .container{
