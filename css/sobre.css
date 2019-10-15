@@ -177,7 +177,7 @@ img.logoEC{
     font-family: 'Arial', sans-serif;
     font-size: 30pt;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 5px;
     animation-name: sobreH1Animation;
     animation-duration: 3s;
     cursor: default;
@@ -189,6 +189,7 @@ img.logoEC{
     }
     to{
         opacity: 1;
+        margin-top: 5px;
     }
 }
 .content1{
@@ -341,7 +342,8 @@ footer p{
     transition: 0.3s;
 }
 .cret:hover{
-    background: #fff;
-    color: #333;
+    background: #E6B31E;
+    color: #fff;
+    border: 3px solid #E6B31E;
     border-radius: 8px;
 }

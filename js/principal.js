@@ -132,5 +132,4 @@ mudaHorario = () => {
 
 setTimeout(mudaHorario, 1000);
 
-
 mudaHorario();

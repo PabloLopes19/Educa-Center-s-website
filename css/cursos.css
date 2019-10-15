@@ -393,7 +393,8 @@ footer p{
     transition: 0.3s;
 }
 .cret:hover{
-    background: #fff;
-    color: #333;
+    background: #E6B31E;
+    color: #fff;
+    border: 3px solid #E6B31E;
     border-radius: 8px;
 }
