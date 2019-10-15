@@ -235,8 +235,14 @@ header{
     .form button:active{    
         background: #997405;
     }
+    .menuMobile{
+        background: #313131;
+    }
 }
 @media only screen and (max-width: 850px) {
+    header{
+        background: #313131;
+    }
     img{
         width: 500px;
     }
@@ -257,6 +263,9 @@ header{
     }
 }
 @media only screen and (max-width: 750px) {
+    header{
+        background: #313131;
+    }
     .container h1{
         font-size: 33pt;
     }
@@ -296,6 +305,7 @@ header{
     #menuMobile{
         display: flex;
         transition: 0.3s;
+        background: #313131;
     }
     .titleProgramacao{
         font-size: 20pt;
