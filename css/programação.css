@@ -140,7 +140,7 @@ header{
     cursor: default;
     color: #111;
     animation-name: progAnima;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 @keyframes progAnima{
     from{

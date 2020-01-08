@@ -116,7 +116,7 @@ header{
     color: #000;
     font-family: sans-serif;
     animation-name: animar;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 .conjuntos{
     border: none;
@@ -152,7 +152,7 @@ p:hover{
 }
 @keyframes animar{
     from{
-        margin-top: 25%;
+        margin-top: 20%;
         opacity: 0;
     }
     to{
@@ -209,5 +209,17 @@ p:hover{
     }
     .conteudo{
         margin-top: -50px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .conjuntos p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .conjuntos p{
+        width: 200px;
+        margin: 0 auto 0 auto;
+        font-size: 10px;
     }
 }

@@ -1,5 +1,5 @@
 function redirectPrincipal(){
-    window.location.href = "principal.html";
+    window.location.href = "index.html";
 }
 function redirectCursos(){
     window.location.href = "cursos.html";
@@ -43,6 +43,11 @@ function discord(){
 
 var btnDarkMode = document.querySelector('#darkModeBtn'); // Pega o componente de ícone
 var btnDarkModeMobile = document.querySelector('#darkModeBtnMobile');
+var btnTopo = document.querySelector('#btnTopo');
+
+btnTopo.addEventListener('click', () => {
+    window.scroll(0, 0);
+});
 
 DarkMode = () => { // Função para mudar o tema do sistema
     document.querySelector('body').style.background = "#444"; // Muda a cor do background

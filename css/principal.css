@@ -76,6 +76,9 @@ header{
     align-items: center;
 }
 #btnDireita, #btnEsquerda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     height: 50px;
     margin: 20px;
@@ -86,23 +89,22 @@ header{
     cursor: pointer;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
     transition: all 0.2s;
-}
-#btnDireita p, #btnDireita p{
-    transition: all 0.2s;
+    outline: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 #btnDireita:hover, #btnEsquerda:hover{
     transform: translateX(-5px);
 }
-#btnDireita p, #btnEsquerda p{
-    transform: translateY(-50%);
-    transition: all 0.3s;
-} 
 #btnDireita:hover{transform: translateX(5px)};
 #btnDireita:active, #btnEsquerda:active{
-    transform: translateZ(3px)
+    transform: translateZ(3px);
 }
 #mural img{
-    height: 400px;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -418,6 +420,9 @@ div.container button:hover{
     }
 }
 @media only screen and (max-width: 650px) {
+    #btnTopo{
+        display: none;
+    }
     #mural img{
         height: 120px;
         background: #333;
@@ -536,6 +541,30 @@ div.container button:hover{
     #backLoko{
         margin-bottom: 0px;
     }
+    #place{
+        font-size: 10pt;
+    }
+}
+#btnTopo{
+    background: #E6B31E;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    left: 47.7%;  
+    width: 60px; 
+    transition: all 0.2s; 
+}
+#btnTopo:hover{
+    background: #997405;
+}
+#btnTopo i{
+    transition: all 0.2s;
+}
+#btnTopo:hover i{
+    transform: translateY(-3px);
 }
 /* Configuração do footer */
 #cretidos{
@@ -547,7 +576,7 @@ div.container button:hover{
 }
 footer{
     background: #2E2E2E;
-    height: 345px;
+    height: 355px;
 }
 #contador{
     font-size: 16pt;
@@ -556,6 +585,9 @@ footer{
     font-size: 13pt;
     transform: translateY(3px);
     margin-right: 5px;
+}
+#phone{
+    margin: 5px;
 }
 footer #insta, #facebook{
     color: #fff;
@@ -579,6 +611,8 @@ footer p{
     cursor: default;
     overflow: hidden;
     font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center ;
 }
 .cretidos{
     color: white;

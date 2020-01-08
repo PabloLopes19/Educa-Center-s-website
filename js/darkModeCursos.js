@@ -1,5 +1,5 @@
 function redirectPrincipal(){
-    window.location.href = "principal.html";
+    window.location.href = "index.html";
 }
 function redirectCursos(){
     window.location.href = "cursos.html";
