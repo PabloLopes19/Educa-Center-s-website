@@ -32,7 +32,7 @@ January update, 2020 of Educa Center's website, Joinville - SC.
 # Escola Técnica Educa Center:
 
 ### WebSite: 
-https://grupoeducacenter.com.br
+http://grupoeducacenter.com.br/
 
 ### Facebook: 
 https://www.facebook.com/grupoeducacenter
